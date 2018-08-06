@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Tea inventory</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+
+  <form id="new-tea-form">
+    <div id="column1">
+      <div class="form-item">
+        <label for="name" class="primary">Tea</label>
+        <input type="text" id="name" required/>
+      </div>
+      <br>
+      <div class="form-item">
+        <label for="quantity" class="primary">Quantity</label>
+        <select id="quantity">
+          <option value="" disabled selected></option>
+          <option value=1>100g</option>
+          <option value=2>200g</option>
+          <option value=3>300g</option>
+          <option value=4>500g</option>
+          <option value=5>600g</option>
+          <option value=6>750g</option>
+          <option value=7>1kg</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <div id="column2">
+      <div class="form-item">
+        Tea type:
+        <br>
+        <input type="radio" name="type" value="loose-leaf" class="primary radio"> <label for="loose-leaf">Loose Leaf</label><br>
+        <input type="radio" name="type" value="sachet" class="primary radio"> <label for="sachet">Sachet</label><br>
+        <input type="radio" name="type" value="Undefined" class="primary radio"> <label for="undefined">Undefined</label><br>
+        <br> <br>
+      </div>
+    </div>
+    <input type="submit" value="Save"/>
+    <button id = "button" type="button">Clear teas</button>
+  </div>
+</form>
+
+<h1>Teas purchased</h1>
+<div id="teas-list">
+</div>
+</body>
+</html>
